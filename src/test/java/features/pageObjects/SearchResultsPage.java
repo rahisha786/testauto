@@ -21,7 +21,7 @@ public class SearchResultsPage {
         boolean searchResult = getResultTitles().contains(keyword);
         return searchResult;
     }
-    
+
     public String checkDescriptionAndPrice(){
         String results =  driver.findElement(By.cssSelector(".currentprice")).getCssValue("Price");
         return results;
